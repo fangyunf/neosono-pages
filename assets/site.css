@@ -1,0 +1,81 @@
+/* 新声影像播放器 · 法务页统一样式 */
+:root {
+  --tide: #0D9488;
+  --deep: #0F766E;
+  --night: #0D3B36;
+  --canvas: #FBFAF8;
+  --ink: #1F2421;
+  --ink-soft: #6B7370;
+  --hairline: #E8E6E1;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: var(--canvas);
+  color: var(--ink);
+  line-height: 1.75;
+  font-size: 16px;
+}
+header {
+  background: linear-gradient(135deg, var(--night), var(--tide));
+  color: #fff;
+  padding: 40px 20px 32px;
+  text-align: center;
+}
+header .sigil {
+  font-size: 34px;
+  letter-spacing: 4px;
+}
+header h1 { font-size: 22px; margin-top: 10px; font-weight: 700; }
+header p { opacity: 0.75; font-size: 13px; margin-top: 6px; }
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+}
+main h2 {
+  font-size: 18px;
+  color: var(--deep);
+  margin: 28px 0 10px;
+  padding-left: 10px;
+  border-left: 4px solid var(--tide);
+}
+main h3 { font-size: 16px; margin: 18px 0 8px; }
+main p, main li { color: var(--ink); margin-bottom: 8px; }
+main ul, main ol { padding-left: 22px; margin-bottom: 10px; }
+main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 14px;
+}
+main th, main td {
+  border: 1px solid var(--hairline);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+main th { background: #F1F0EC; }
+.table-wrap { overflow-x: auto; }
+.meta { color: var(--ink-soft); font-size: 13px; }
+.notice {
+  background: #CCFBF1;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 16px 0;
+  font-size: 14px;
+}
+footer {
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 12px;
+  padding: 24px 16px 40px;
+  border-top: 1px solid var(--hairline);
+}
+footer a, main a { color: var(--tide); text-decoration: none; }
+nav.crumbs {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 14px 20px 0;
+  font-size: 14px;
+}
